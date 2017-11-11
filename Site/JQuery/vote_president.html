@@ -16,6 +16,11 @@
 	
 	<!-- Custom styles for this template -->
     <link href="css/full.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
 </head>
 <body>
 <!-- Navigation -->
@@ -52,30 +57,69 @@
 		</div>
 		<div class="col">
 
-			<p> <b> <br><br><br> <center>President Canditates</b> </p>
-			<form action="#"> <!--Site must get text and go to the finger print-->
-				<div class="form-group">
-					<label for="firstName"> First Name:</label>
-					<input type="text" class="form-control" id="firstName" name="">
-				</div>
-				<div class="form-group">
-					<label for="lastName">Last Name:</label>
-					<input type="password" class="form-control" id="lastName" name="">
-				</div>
-				<button type="submit" class="btn btn-primary">Submit</button>
-			</form>
-			
-			
-      <ul class="pagination">
-        <center>
-        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-        <li class="page-item"><a class="page-link" href="vote_president.html">1</a></li>
-        <li class="page-item"><a class="page-link" href="vote_vice.html">2</a></li>
-        <li class="page-item"><a class="page-link" href="vote_senator.html">3</a></li>
-        <li class="page-item"><a class="page-link" href="vote_vice.html">Next</a></li>
-        </center>
-      </ul>
-      </center>
+
+			<p> <b> <br><br><br> <center>2018 Elections</b> </p>
+
+      <div class="container">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#pres">President</a></li>
+    <li><a data-toggle="tab" href="#vp">Vice President</a></li>
+    <li><a data-toggle="tab" href="#sen">Senator</a></li>
+    <li><a data-toggle="tab" href="#menu3"></a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="pres" class="tab-pane fade in active">
+      <h3>PRESIDENT</h3>
+
+      <form action="#"> <!--Site must get text and go to the finger print-->
+        <label class="radio-inline">
+          <input type="radio" name="optradio">Option 1
+        </label>
+        <br/>
+        <label class="radio-inline">
+          <input type="radio" name="optradio">Option 1
+        </label>
+        <br/>
+        <a href="#vp"><button class="btn btn-primary">Next</button></a>
+
+    </div>
+    <div id="vp" class="tab-pane fade">
+      <h3>VICE PRESIDENT</h3>
+      
+        <label class="radio-inline">
+          <input type="radio" name="optradio">Option 1
+        </label>
+        <br/>
+        <label class="radio-inline">
+          <input type="radio" name="optradio">Option 1
+        </label>
+        <br/>
+        <button href="#sen" class="btn btn-primary">Next</button>
+      
+    </div>
+    <div id="sen" class="tab-pane fade">
+      <h3>SENATORS</h3>
+       <!--Site must get text and go to the finger print-->
+        <label class="radio-inline">
+          <input type="radio" name="optradio">Option 1
+        </label>
+        <br/>
+        <label class="radio-inline">
+          <input type="radio" name="optradio">Option 1
+        </label>
+        <br/>
+        <button type="submit" class="btn btn-primary">SUBMIT</button>
+      </form>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+
+		
 			
 		</div>
 		<div class="col">
